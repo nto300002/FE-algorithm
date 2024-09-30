@@ -1,0 +1,18 @@
+URL: https://www.ipa.go.jp/shiken/mondai-kaiotu/gmcbt8000000f3yi-att/2009h21a_fe_pm_qs.pdf
+p 33
+Python
+
+a0 = 3
+a1 = -1
+a2 = -3
+a3 = 1
+x = 2.5
+b2 = 3 * a3
+b1 = 2 * a2
+b0 = a1
+
+for i in range(100):
+    f = ((a3*x+a2)*x+a1)*x+a0
+    d = (b2*x+b1)*x+b0
+    print(x,f,d)
+    x = x - f / d

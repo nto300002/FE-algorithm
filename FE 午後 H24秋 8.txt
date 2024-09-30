@@ -1,0 +1,11 @@
+副プログラム:ClalcDist(整数型: N, 整数型: Dist[][])
+整数型: From, To, Via
+・Print(N, Dist)
+
+Via: 1, Via ≦ N, 1
+  From: 1, From ≦ N, 1
+    To: 1, To ≦ N, 1
+      Dist[From][To] > Dist[From][Via]+Dist[Via][to]
+      ・Dist[From][To] ← Dist[From][Via] + Dist[Via][To]
+
+  ・Print(N, Dist)
